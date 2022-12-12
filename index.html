@@ -2,19 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Mahinul Mostafa Abid"/>
     <meta name="description" content="A website for Charity and all the other good stuff" />
     <meta name="keyword" content="charity, africa"/>
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./src/css/style.css" type="text/css">
     <title>Charity - Home</title>
 </head>
 <body>
     <header>
-        <nav>
-            
+        <nav class="bound-one">
+            <a href="#" class="nav-link">
+                <img src="./src/img/logo.png" alt="website logo" height="70">
+            </a>
+
+            <form action="null.php">
+                <input class="search-nav" type="search" id="gsearch" name="gsearch" placeholder="Search Anything">
+            </form>
+
+            <a href="#" class="nav-link">About Us</a>
+            <a href="#" class="nav-link">Our Campaigns</a>
+            <a href="#" class="nav-link">Contact</a>
+            <div class="login-register">
+                <a href="#" id="register-nav">Register</a>
+                <a href="#" id="login-nav">Login</a>
+            </div>
+
+            <div class="ham-bar-container">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </nav>
     </header>
 </body>
