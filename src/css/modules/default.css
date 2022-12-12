@@ -1,0 +1,29 @@
+/* some basic css style */
+:root{
+    --main-light: #49CE8C;
+    --main-dark: #005C2D;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Raleway', sans-serif;
+}
+
+h1{
+    font-size:40px;
+    color: var(--main-dark);
+}
+
+/* will be used for description */
+.desc{
+    font-size: 22px;
+}
+
+a:link, a:visited{
+    
+}
