@@ -9,3 +9,46 @@
     --light-black: rgba(0, 0, 0, 0.281);
 }
 
+/* hero section */
+.hero-section{
+    background: url("../img/headerimage.jpg");
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    min-height:90vh;
+}
+
+.hero-section img{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    object-fit:contain;
+}
+
+.heading-hero{
+    position:absolute;
+    bottom:30px;
+    right: 20px;
+    text-align:right;
+}
+
+.heading-hero h1{
+    font-size: 60px;
+    color: white;
+}
+
+
+
+/* WHO WE ARE */
+.who-are-we{
+    margin-top: 60px;
+}
+
+.who-are-we h1, 
+.who-are-we .desc{
+    text-align: center;
+}
+
+.who-are-we .desc{
+    margin-top:25px;
+}
