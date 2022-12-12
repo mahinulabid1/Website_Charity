@@ -10,7 +10,8 @@
     box-sizing: border-box;
 }
 
-html, body{
+html, 
+body{
     font-family: 'Raleway', sans-serif;
 }
 
@@ -24,6 +25,13 @@ h1{
     font-size: 22px;
 }
 
-a:link, a:visited{
-    
+a{
+    text-decoration:none;
+}
+
+a:link, 
+a:visited,
+a:hover, 
+a:visited{
+    color: white;
 }
