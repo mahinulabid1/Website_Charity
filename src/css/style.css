@@ -1,38 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
 @import url("./modules/default.css");
 @import url("./modules/navbar.css");
-:root{
+
+:root {
     --main-light: #49CE8C;
     --main-light-hover: #60fcae;
     --main-dark: #005C2D;
-    --main-dark-hover:#04ad56;
+    --main-dark-hover: #04ad56;
     --light-black: rgba(0, 0, 0, 0.281);
 }
 
 /* hero section */
-.hero-section{
+.hero-section {
     background: url("../img/headerimage.jpg");
     background-size: cover;
     background-position: center;
-    position:relative;
-    min-height:90vh;
+    position: relative;
+    min-height: 90vh;
 }
 
-.hero-section img{
+.hero-section img {
     position: absolute;
-    bottom:0;
+    bottom: 0;
     right: 0;
-    object-fit:contain;
+    object-fit: contain;
 }
 
-.heading-hero{
-    position:absolute;
-    bottom:30px;
+.heading-hero {
+    position: absolute;
+    bottom: 30px;
     right: 20px;
-    text-align:right;
+    text-align: right;
 }
 
-.heading-hero h1{
+.heading-hero h1 {
     font-size: 60px;
     color: white;
 }
@@ -40,80 +41,186 @@
 
 
 /* WHO WE ARE */
-.who-are-we{
+.who-are-we {
     margin-top: 60px;
 }
 
-.who-are-we h1, 
-.who-are-we .desc{
+.who-are-we h1,
+.who-are-we .desc {
     text-align: center;
 }
 
-.who-are-we .desc{
-    margin-top:25px;
+.who-are-we .desc {
+    margin-top: 25px;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.who-are-we .list{
-    display:flex;
+.who-are-we .list {
+    display: flex;
     justify-content: center;
 
 }
 
-.who-are-we .list{
-    margin-top:55px;
+.who-are-we .list {
+    margin-top: 55px;
 }
 
-.who-are-we .list:first-of-type{
-    margin-top:50px;
+.who-are-we .list:first-of-type {
+    margin-top: 50px;
 }
 
-.who-are-we h2{
+.who-are-we h2 {
     color: var(--main-dark);
     margin-bottom: 20px;
 }
 
-.who-are-we .list-description{
-    max-width:500px;
+.who-are-we .list-description {
+    width: 500px;
 }
 
-.who-are-we .section-content{
+.who-are-we .section-content {
     margin-left: 60px;
 }
 
-.who-are-list-img{
+.who-are-list-img {
     height: 200px;
     width: 200px;
     object-fit: contain;
 
 }
 
-.section-who-link{
-    margin-top:30px;
-    display:inline-block;
-    padding: 10px 30px; 
-    border-radius:10px;
+.section-who-link {
+    margin-top: 30px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 10px;
 }
 
 .section-who-link:link,
-.section-who-link:visited{
+.section-who-link:visited {
     background: var(--main-light);
     color: white;
 }
 
-.section-who-link:hover, 
-.section-who-link:active{
-   background:var(--main-light-hover);
-   color: white; 
+.section-who-link:hover,
+.section-who-link:active {
+    background: var(--main-light-hover);
+    color: white;
+}
+
+/* OUR CHARITY */
+.our-charity h1 {
+    text-align: center;
+    margin-top: 88px;
+    margin-bottom: 38px;
+}
+
+.our-ch-list-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 66px;
+}
+
+.our-ch-list-container div {
+    width: 500px;
+    /* background: url("../img/headerimage.jpg"); */
+    height: 195px;
+    padding: 24px;
+    border-radius: 30px;
+    color: rgba(255, 255, 255, 0.774);
+}
+
+.our-ch-list-container div h2 {
+    margin-bottom: 10px;
+}
+.our-ch-list-container div p{
+    font-weight: 500;
+}
+
+.o-ch-list-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/our charities/image4.jpg");
+}
+
+.o-ch-list-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/our charities/image2.jpg");
+}
+
+.o-ch-list-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/our charities/image3.jpg");
+}
+
+.o-ch-list-4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/our charities/image1.jpg");
+}
+
+.o-ch-list-1,
+.o-ch-list-2,
+.o-ch-list-3,
+.o-ch-list-4{
+    background-size: cover;
+    background-position: center;
+}
+
+.o-ch-list-1,
+.o-ch-list-3 {
+    margin-right: 20px;
+}
+
+.charity-list-heading {
+    font-size: 40px;
+}
+
+.our-charity a{
+    font-size:28px;
+    display:inline-block;
+    margin-bottom: 60px;
+    position:relative;
+    left: 50%;
+    transform:translateX(-50%);
+    line-height:75px;
+    width:300px;
+    text-align: center;
+    color:white;
+    border-radius: 10px;
+}
+
+.our-charity a:link,
+.our-charity a:visited{
+    background: var(--main-light);
+}
+
+.our-charity a:hover,
+.our-charity a:active{
+    background: var(--main-light-hover);
+}
+
+
+
+/* download app */
+.download-app{
+    text-align: center;
+}
+.download-app img{
+    display: inline-block;
+    text-align: center;
 }
 
 
 
 
 
-@media only screen and (max-width:1300px){
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1300px) {
     .who-are-we .desc {
         width: 90%;
     }
@@ -123,7 +230,7 @@
     }
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1000px) {
     .who-are-we .desc {
         width: 100%;
         font-size: 19px;
@@ -131,18 +238,42 @@
 
     .who-are-we .list {
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
+
     .who-are-we h2 {
         margin-top: 30px;
     }
+
     .who-are-we .section-content {
         margin-left: 0px;
     }
+
     .heading-hero h1 {
         font-size: 40px;
+    }
+
+    /* our charity */
+    .our-ch-list-container {
+        flex-direction: column;
+        margin-bottom:10px;
+        align-items: center;
+    }
+    .o-ch-list-1, .o-ch-list-3 {
+        margin-bottom:10px;
+        margin-right:0;
+    }
+
+    .our-ch-list-container div {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .who-are-we .list-description {
+        width: 100%;
     }
 }
