@@ -51,4 +51,98 @@
 
 .who-are-we .desc{
     margin-top:25px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.who-are-we .list{
+    display:flex;
+    justify-content: center;
+
+}
+
+.who-are-we .list{
+    margin-top:55px;
+}
+
+.who-are-we .list:first-of-type{
+    margin-top:50px;
+}
+
+.who-are-we h2{
+    color: var(--main-dark);
+    margin-bottom: 20px;
+}
+
+.who-are-we .list-description{
+    max-width:500px;
+}
+
+.who-are-we .section-content{
+    margin-left: 60px;
+}
+
+.who-are-list-img{
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+
+}
+
+.section-who-link{
+    margin-top:30px;
+    display:inline-block;
+    padding: 10px 30px; 
+    border-radius:10px;
+}
+
+.section-who-link:link,
+.section-who-link:visited{
+    background: var(--main-light);
+    color: white;
+}
+
+.section-who-link:hover, 
+.section-who-link:active{
+   background:var(--main-light-hover);
+   color: white; 
+}
+
+
+
+
+
+@media only screen and (max-width:1300px){
+    .who-are-we .desc {
+        width: 90%;
+    }
+
+    .heading-hero h1 {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .who-are-we .desc {
+        width: 100%;
+        font-size: 19px;
+    }
+
+    .who-are-we .list {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .who-are-we h2 {
+        margin-top: 30px;
+    }
+    .who-are-we .section-content {
+        margin-left: 0px;
+    }
+    .heading-hero h1 {
+        font-size: 40px;
+    }
 }
