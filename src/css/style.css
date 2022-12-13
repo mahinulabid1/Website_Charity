@@ -172,44 +172,59 @@
     font-size: 40px;
 }
 
-.our-charity a{
-    font-size:28px;
-    display:inline-block;
-    margin-bottom: 60px;
-    position:relative;
-    left: 50%;
-    transform:translateX(-50%);
-    line-height:75px;
-    width:300px;
-    text-align: center;
-    color:white;
-    border-radius: 10px;
-}
 
-.our-charity a:link,
-.our-charity a:visited{
-    background: var(--main-light);
-}
-
-.our-charity a:hover,
-.our-charity a:active{
-    background: var(--main-light-hover);
-}
 
 
 
 /* download app */
 .download-app{
     text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom:50px;
+    padding-top: 50px;
 }
-.download-app img{
-    display: inline-block;
+
+.download-app a{
+    font-size:28px;
+    margin-bottom: 60px;
+    line-height:75px;
+    width:300px;
     text-align: center;
+    color:white;
+    border-radius: 10px;
+
+}
+
+.download-app a:link,
+.download-app a:visited{
+    background: var(--main-light);
+}
+
+.download-app a:hover,
+.download-app a:active{
+    background: var(--main-light-hover);
 }
 
 
+/* REGISTER SECTION */
+/* =========================== */
+.register-section{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0;
+    background-color: var(--main-light);
+    color:white;
+}
 
+.register-section div:first-child{
+    margin-right: 20px;
+}
 
+.register-section div img{
+    display:block;
+}
 
 
 

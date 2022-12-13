@@ -91,6 +91,7 @@ nav img{
     margin:auto 0;
     display: none;
 }
+
 .ham-bar-container div{
     height: 3px;
     border-radius:50px;
@@ -103,6 +104,13 @@ nav img{
 .ham-bar-container div:not(:last-child){
     margin-bottom: 6px;
 }
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width:1550px){

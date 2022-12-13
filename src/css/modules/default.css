@@ -42,6 +42,11 @@ a:visited{
     padding-right: 41px;
 }
 
+.bound-two{
+    margin-left:41px;
+    margin-right: 41px;
+}
+
 @media screen and (max-width:500px){
     .bound-one{
         padding-left:21px;
