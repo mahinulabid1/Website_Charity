@@ -44,6 +44,19 @@ nav img{
     width: 408px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px var(--light-black);
+    position:relative;
+}
+.search-nav::after{
+    content: "";
+    display:block;
+    position:absolute;
+    top:0;
+    right:0;
+    background:url("../../img/search.png");
+    background-size:contain;
+    height:30px;
+    width:30px;
+    
 }
 
 .login-register{

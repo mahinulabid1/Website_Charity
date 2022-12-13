@@ -1,8 +1,8 @@
 @keyframes stickynav{
     0%{
-        top: -60%;
+        transform: translateY(-60%);
     }
     100%{
-        top:0;
+        transform: translateY(0);
     }
 }
