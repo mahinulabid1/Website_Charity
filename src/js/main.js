@@ -5,12 +5,12 @@ const mobileNavSection= document.querySelector(".mobile-nav");
 
 document.addEventListener("scroll" , (event)=>{
     let pageScrolled= window.pageYOffset;
-    if(pageScrolled > 100){
+    if(pageScrolled > 300){
         nav.classList.add("sticky-top");
         nav.style.animationName="stickynav";
         nav.style.animationDuration="1s";
         
-    }else if(pageScrolled <= 100){
+    }else if(pageScrolled <= 300){
         nav.classList.remove("sticky-top");
         nav.style.animation="";
     }
