@@ -179,11 +179,13 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom:50px;
+    margin-bottom:50px;
     margin-top: 50px;
-    /* background: url("../img/downloadappBG.png");
+    background: url("../img/downloadappBG.png");
     background-size:cover;
-    background-repeat:no-repeat; */
+    background-repeat:no-repeat;
+    background-position:center;
+
 }
 
 .download-app a{
