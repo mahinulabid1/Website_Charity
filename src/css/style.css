@@ -188,7 +188,7 @@
 
 }
 
-.download-app a{
+.download-app a:first-child{
     font-size:28px;
     margin-bottom: 60px;
     line-height:75px;
@@ -199,13 +199,13 @@
 
 }
 
-.download-app a:link,
-.download-app a:visited{
+.download-app a:first-child:link,
+.download-app a:first-child:visited{
     background: var(--main-light);
 }
 
-.download-app a:hover,
-.download-app a:active{
+.download-app a:first-child:hover,
+.download-app a:first-child:active{
     background: var(--main-light-hover);
 }
 

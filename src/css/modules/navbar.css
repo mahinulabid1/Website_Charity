@@ -17,6 +17,11 @@ nav a:active{
     color:black;
 }
 
+nav a:hover, 
+nav a:active{
+    color:var(--main-light);
+}
+
 nav >a:first-child{
     line-height: 70px;
 }
@@ -45,18 +50,6 @@ nav img{
     border-radius: 10px;
     box-shadow: 5px 5px 10px var(--light-black);
     position:relative;
-}
-.search-nav::after{
-    content: "";
-    display:block;
-    position:absolute;
-    top:0;
-    right:0;
-    background:url("../../img/search.png");
-    background-size:contain;
-    height:30px;
-    width:30px;
-    
 }
 
 .login-register{
