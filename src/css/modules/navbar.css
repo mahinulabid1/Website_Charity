@@ -1,9 +1,13 @@
 @import url("./variable.css");
+@import url("./keyframes_animation.css");
 
 nav{    
     display:flex;
     justify-content: space-around;
     line-height: 105px;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.247);
+    /* animation: stickynav 2s ease-in; */
 }
 
 nav a:link, 
@@ -11,6 +15,10 @@ nav a:visited,
 nav a:hover, 
 nav a:active{
     color:black;
+}
+
+nav >a:first-child{
+    line-height: 70px;
 }
 
 nav, 

@@ -43,6 +43,16 @@ a{
     margin-right: 41px;
 }
 
+.sticky-top{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index:10;
+}
+
+
+
 @media screen and (max-width:500px){
     .bound-one{
         padding-left:21px;

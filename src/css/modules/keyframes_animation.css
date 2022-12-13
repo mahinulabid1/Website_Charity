@@ -1,0 +1,8 @@
+@keyframes stickynav{
+    0%{
+        top: -60%;
+    }
+    100%{
+        top:0;
+    }
+}
