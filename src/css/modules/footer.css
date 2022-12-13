@@ -1,0 +1,54 @@
+@import url("variable.css");
+
+footer{
+    display:flex;
+    justify-content: space-around;
+    background: var(--main-dark);
+    color:white;
+    padding: 60px 0;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+footer > div:last-child{
+    display:flex;
+    justify-content: space-between;
+    min-width: 200px;
+}
+.footer-list-group:first-child{
+    margin-right:141px;
+}
+
+.footer-list-group a{
+    display: block;
+    /* text-align: center; */
+    margin-bottom:15px;
+}
+
+.footer-list-group a:link,
+.footer-list-group a:visited{
+    color: white;
+}
+
+.footer-list-group a:hover,
+.footer-list-group a:active{
+    text-decoration:underline;
+}
+
+
+@media only screen and (max-width: 700px){
+    footer{
+        flex-direction:column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-list-group:first-child {
+        margin-right: 0px;
+    }
+
+    footer > div:last-child{
+        flex-direction:column;
+        /* align-items: center; */
+    }
+}

@@ -1,16 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
 @import url("./modules/default.css");
 @import url("./modules/navbar.css");
+@import url("./modules/footer.css");
+@import url("./modules/variable.css");
 
-:root {
-    --main-light: #49CE8C;
-    --main-light-hover: #60fcae;
-    --main-dark: #005C2D;
-    --main-dark-hover: #04ad56;
-    --light-black: rgba(0, 0, 0, 0.281);
-}
-
-/* hero section */
+/* HERO SECTION */
+/* ========================================= */
 .hero-section {
     background: url("../img/headerimage.jpg");
     background-size: cover;
@@ -41,6 +36,7 @@
 
 
 /* WHO WE ARE */
+/* ============================ */
 .who-are-we {
     margin-top: 60px;
 }
@@ -111,6 +107,7 @@
 }
 
 /* OUR CHARITY */
+/* ============================== */
 .our-charity h1 {
     text-align: center;
     margin-top: 88px;
@@ -125,7 +122,6 @@
 
 .our-ch-list-container div {
     width: 500px;
-    /* background: url("../img/headerimage.jpg"); */
     height: 195px;
     padding: 24px;
     border-radius: 30px;
@@ -176,7 +172,8 @@
 
 
 
-/* download app */
+/* DOWNLOAD APP */
+/* ============================ */
 .download-app{
     text-align: center;
     display:flex;
@@ -262,6 +259,109 @@
 
 
 
+/* CONTACT US */
+/* ========================== */
+.contact-us{
+    display:flex;
+    justify-content: center;
+    margin-top: 84px;
+    min-height: 300px;
+}
+
+.contact-us > div:first-child{
+    margin-right: 120px;
+}
+
+.contact-content{
+    display:flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+
+.contact-content div:first-child{
+    margin-right: 20px;
+}
+
+.contact-content a:link,
+.contact-content a:visited{
+    color:black;
+}
+
+.contact-content a:hover,
+.contact-content a:active{
+    text-decoration: underline;
+}
+
+.google-map{
+    width: 100%;
+    height: 158px;
+}
+
+.contact-us form input:not([type="submit"]), 
+.contact-us form textarea{
+    display:block;
+}
+
+input[type="submit"]{
+    display: inline-block;
+}
+
+.contact-us h1:first-child,
+.contact-content,
+.contact-us form input,
+.contact-us form textarea{
+    margin-bottom :25px;
+}
+
+.contact-us form input,
+.contact-us form textarea{
+    font-size: 18px;
+    font-weight: 500;
+    width: 500px;
+    padding: 10px 20px;
+    border-radius: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.329);
+}
+
+.contact-us form input:focus ,
+.contact-us form textarea:focus{
+    outline:none;
+}
+
+.contact-us form input{
+    height: 45px;
+}
+
+.contact-us form textarea{
+   height: 153px; 
+}
+
+.contact-us form textarea{
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact-us form input[type="submit"]{
+    display: inline-block;
+    width:154px;
+    cursor: pointer;
+    border:none;
+    color:white;
+    background:var(--main-dark);
+    border-radius: 8px;
+}
+
+.contact-us form input[type="submit"]:hover{
+    background: var(--main-dark-hover);
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -329,6 +429,21 @@
     .reg-sec-div:first-child{
         margin-bottom: 100px;
     }
+
+    /* contact us section */
+    .contact-us {
+        flex-direction: column;
+    }
+
+    .contact-us > div:first-child {
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+
+    .contact-us form input, .contact-us form textarea {
+        width: 100%;
+    }
+    
 }
 
 @media only screen and (max-width: 600px) {

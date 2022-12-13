@@ -1,8 +1,5 @@
 /* some basic css style */
-:root{
-    --main-light: #49CE8C;
-    --main-dark: #005C2D;
-}
+@import url("./variable.css");
 
 *{
     margin:0;
@@ -20,6 +17,11 @@ h1{
     font-size:40px;
     color: var(--main-dark);
 }
+
+textarea{
+    font-family: 'Raleway', sans-serif;
+}
+
 
 /* will be used for description */
 .desc{
