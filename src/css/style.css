@@ -216,16 +216,49 @@
     padding: 30px 0;
     background-color: var(--main-light);
     color:white;
+    position:relative;
 }
 
-.register-section div:first-child{
-    margin-right: 20px;
+.reg-sec-div{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    font-size: 21px;
+    max-width: 328px;
 }
 
-.register-section div img{
-    display:block;
+.reg-sec-div h3,.reg-sec-div div img{
+    margin-bottom :20px;    
 }
 
+.reg-sec-div div img{
+    position:relative;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.reg-sec-div p:not(:last-child){
+    margin-bottom:29px;
+}
+
+.reg-sec-div a{
+    display:block; 
+    color:white;
+    text-align:center;
+    margin-top: 20px;
+    line-height: 60px;
+    border-radius:10px;
+}
+
+.reg-sec-div a:link, 
+.reg-sec-div a:visited{
+    background-color: var(--main-dark);
+}
+
+.reg-sec-div a:hover, 
+.reg-sec-div a:active{
+    background-color: var(--main-dark-hover);
+}
 
 
 
@@ -285,10 +318,25 @@
     .our-ch-list-container div {
         width: 100%;
     }
+
+
+    /* register section */
+    .register-section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reg-sec-div:first-child{
+        margin-bottom: 100px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
     .who-are-we .list-description {
         width: 100%;
+    }
+    .reg-sec-div{
+        max-width: none;
+        width: 95%;
     }
 }

@@ -30,12 +30,6 @@ a{
     text-decoration:none;
 }
 
-/* a:link, 
-a:visited,
-a:hover, 
-a:visited{
-    color: white;
-} */
 
 .bound-one{
     padding-left:41px;
@@ -51,6 +45,10 @@ a:visited{
     .bound-one{
         padding-left:21px;
         padding-right: 21px;
+    }
+    .bound-two{
+        margin-left:21px;
+        margin-right: 21px;
     }
 }
 
