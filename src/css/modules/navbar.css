@@ -16,12 +16,16 @@ nav a:active{
     color:black;
 }
 
+nav > form{
+    position:relative;
+}
+
 nav a:hover, 
 nav a:active{
     color:var(--main-light);
 }
 
-nav >a:first-child{
+nav > a:first-child{
     line-height: 70px;
 }
 
@@ -32,6 +36,18 @@ nav,
 
 .search-nav:focus{
     outline:none;
+}
+
+.search-submit img{
+    display:block;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    right:2%;
+    cursor:pointer;
+    box-sizing:unset;
+    padding: 10px;
+    opacity:0.5;
 }
 
 nav img{
